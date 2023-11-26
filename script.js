@@ -7,16 +7,17 @@ const divide = (arr, n) => {
 	for(let i=0;i<arr.length;i++)
 		{
 			sum=sum+arr[i];
-			newarr2=arr[i];
-			if(sum>n)
+			
+			if(sum<=n)
 			{
-			newarr.push(new2arr);
-				new2arr=[];
-				
+			newarr.push(arr[i]);
+			}
+			else{
+				newarr2.push(newarr);
+				newarr=[];
 			}
 		}
 	return newarr;
 };
-
 const n = prompt("Enter n:");
 alert(JSON.stringify(divide(arr, n)));
