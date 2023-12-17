@@ -2,6 +2,7 @@ const arr = [1, 2, 3, 4, 1, 0, 2, 2];
 let newarr=[];
 let newarr2=[];
 
+
 const divide = (arr, n) => {
   // Write your code here
 	for(let i=0;i<arr.length;i++)
@@ -17,7 +18,8 @@ const divide = (arr, n) => {
 				newarr=[];
 			}
 		}
-	return newarr;
+	alert("abc");
 };
 const n = prompt("Enter n:");
-alert(JSON.stringify(divide(arr, n)));
+divide(arr,i);
+
